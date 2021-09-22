@@ -1,0 +1,72 @@
+.footer {
+  padding: 65px 100px;
+  background-color: $semi-black;
+  color: $white;
+
+  &__blocks {
+    display: flex;
+    gap: 80px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+  }
+
+  &__block--icons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  &__logo {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    padding-bottom: 30px;
+  }
+
+  &__subtitle {
+    padding-top: 25px;
+  }
+
+  &__email {
+    padding-top: 45px;
+    text-decoration: none;
+    cursor: pointer;
+    color: $white;
+
+    &:hover {
+      text-decoration: underline;
+      color: $white;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    cursor: pointer;
+    color: $white;
+
+    &:hover {
+      text-decoration: underline;
+      color: $white;
+    }
+  }
+
+  &__icon {
+    cursor: pointer;
+
+    &:hover {
+      svg path {
+        fill: $orange;
+      }
+    }
+  }
+}

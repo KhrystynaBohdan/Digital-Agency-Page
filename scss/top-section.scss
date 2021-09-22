@@ -1,0 +1,58 @@
+.top-section {
+  background-image: url("images/background-wave.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  padding: 100px 115px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #E87D0E;
+    margin-top: 30px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 78px;
+    margin-top: 20px;
+  }
+
+  &__body {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 24px;
+  }
+
+  &__button {
+    font-family: $fontPoppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    margin-top: 52px;
+    border-radius: 30px;
+    color: $white;
+    background: linear-gradient(92.48deg, #FA8305 2.08%, #FB9E3C 117.25%);
+    width: 195px;
+    height: 55px;
+    border-style: none;
+
+    &:hover {
+      cursor: pointer;
+      background: $white;
+      color: $light-orange;
+    }
+  }
+}

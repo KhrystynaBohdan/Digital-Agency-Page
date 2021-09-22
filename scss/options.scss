@@ -1,0 +1,90 @@
+.options {
+  padding: 85px 200px 135px 200px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 45px;
+    text-align: center;
+    color: $dark-grey;
+    padding: 0 105px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: $dark-grey;
+    margin-top: 25px;
+    padding: 0 100px;
+  }
+
+  &__blocks {
+    margin-top: 100px;
+    display: grid;
+    grid-template-areas:
+        "card1 card2 card3 card4"
+        ". card5 card6 .";
+    grid-template-columns: repeat(4, 250px);
+    row-gap: 80px;
+    column-gap: 35px;
+  }
+
+  &__block--card-1 {
+    grid-area: card1;
+  }
+
+  &__block--card-2 {
+    grid-area: card2;
+  }
+
+  &__block--card-3 {
+    grid-area: card3;
+  }
+
+  &__block--card-4 {
+    grid-area: card4;
+  }
+
+  &__block--card-5 {
+    grid-area: card5;
+  }
+
+  &__block--card-6 {
+    grid-area: card6;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  &__block-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: $black;
+
+  }
+
+  &__circle {
+    align-self: center;
+    border-radius: 50%;
+    background-color: rgba(220, 112, 0, 0.09);
+    width: 65px;
+    height: 65px;
+  }
+
+  &__arrow {
+    cursor: pointer;
+
+    &:hover {
+      svg path {
+        fill: $dark-grey;
+      }
+    }
+  }
+}

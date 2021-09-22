@@ -1,0 +1,45 @@
+.office {
+  padding: 80px 130px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 45px;
+    text-align: center;
+    color: $dark-grey;
+    padding: 0 176px;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 55px;
+    color: $dark-grey;
+    margin-top: 55px
+  }
+
+  &__body {
+    font-size: 16px;
+    line-height: 30px;
+    color: $semi-grey;
+    margin-top: 18px;
+    width: 49%;
+  }
+
+  &__pictures {
+    position: relative;
+  }
+
+  &__points {
+    position: absolute;
+    top: -65px;
+    right: 150px;
+    z-index: 1;
+  }
+
+  &__image {
+    position: relative;
+    margin-top: 55px;
+    z-index: 2;
+  }
+}

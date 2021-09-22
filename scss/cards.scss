@@ -1,0 +1,129 @@
+.cards {
+  width: 100%;
+  height: 710px;
+  background-color: $semi-white;
+
+  &__header {
+    padding: 55px 135px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 55px;
+    color: $dark-grey;
+  }
+
+  &__subtitle {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    font-size: 16px;
+    line-height: 30px;
+    color: $semi-grey;
+    padding-top: 15px;
+    width: 50%;
+  }
+
+  &__arrows {
+    display: flex;
+
+  }
+
+  &__arrow {
+    cursor: pointer;
+
+  }
+
+  &__options {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    column-gap: 40px;
+    align-items: center;
+    justify-items: center;
+    padding: 0 100px;
+  }
+
+  &__option {
+    width: 380px;
+    height: 350px;
+    background: $white;
+    box-shadow: 0 4px 94px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    gap: 20px;
+  }
+
+  &__option-arrow {
+    display: flex;
+    align-self: end;
+    align-items: center;
+    text-decoration: none;
+    color: $light-orange;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+      color: $dark-grey;
+
+      svg path {
+        fill: $dark-grey;
+      }
+    }
+  }
+
+  &__option-arrow svg {
+    margin-left: 10px;
+  }
+
+  &__button {
+    width: 140px;
+    height: 40px;
+    border-radius: 8px;
+    border-style: none;
+    font-size: 14px;
+    line-height: 27px;
+    font-family: $fontPoppins;
+    padding-right: 35px;
+    cursor: pointer;
+
+    &:hover {
+      color: $orange;
+      background-color: $white;
+    }
+  }
+
+  &__button--1 {
+    color: #DC0000;
+    background: rgba(220, 0, 0, 0.1);
+  }
+
+  &__button--2 {
+    color: #DC0000;
+    background: rgba(176, 0, 220, 0.11);
+  }
+
+  &__button--3 {
+    color: #0058DC;
+    background: rgba(0, 88, 220, 0.09);
+  }
+
+  &__option-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 38px;
+    color: $black;
+  }
+
+  &__option-body {
+    font-size: 14px;
+    line-height: 27px;
+    color: $semi-grey;
+    gap: 20px;
+  }
+
+}

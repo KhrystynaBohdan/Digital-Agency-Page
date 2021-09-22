@@ -1,0 +1,16 @@
+@import "reset";
+@import "variables";
+@import "home-section";
+@import "top-section";
+@import "office";
+@import "options";
+@import "cards";
+@import "projects";
+@import "read-more";
+@import "subscribe";
+@import "footer";
+
+body {
+  background: $white;
+  font-family: $fontPoppins;
+}

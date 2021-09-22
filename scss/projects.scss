@@ -1,0 +1,30 @@
+.projects {
+  padding: 135px 135px;
+  height: 970px;
+
+  &__header {
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 47px;
+    color: $dark-grey;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    line-height: 26px;
+    color: $semi-grey;
+    padding: 0 330px;
+  }
+
+  &__images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 27px;
+    margin-top: 85px;
+  }
+}
+
