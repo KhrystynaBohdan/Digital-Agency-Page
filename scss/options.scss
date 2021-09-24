@@ -1,5 +1,10 @@
 .options {
   padding: 85px 200px 135px 200px;
+  width: auto;
+
+  @media (max-width: 767px) {
+    padding: 50px 0;
+  }
 
   &__title {
     font-weight: 600;
@@ -8,6 +13,11 @@
     text-align: center;
     color: $dark-grey;
     padding: 0 105px;
+    @media (max-width: 767px) {
+      padding: 0 30px;
+      font-size: 20px;
+      line-height: 38px;
+    }
   }
 
   &__subtitle {
@@ -17,6 +27,11 @@
     color: $dark-grey;
     margin-top: 25px;
     padding: 0 100px;
+    @media (max-width: 767px) {
+      padding: 0 30px;
+      font-size: 12px;
+      line-height: 23px;
+    }
   }
 
   &__blocks {
@@ -28,6 +43,17 @@
     grid-template-columns: repeat(4, 250px);
     row-gap: 80px;
     column-gap: 35px;
+    @media (max-width: 767px) {
+      grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6";
+      grid-template-columns: repeat(1, 1fr);
+
+    }
   }
 
   &__block--card-1 {
@@ -59,6 +85,13 @@
     flex-direction: column;
     align-items: center;
     gap: 25px;
+    cursor: pointer;
+
+    &:hover {
+      svg path {
+        fill: $dark-grey;
+      }
+    }
   }
 
   &__block-title {
@@ -78,13 +111,4 @@
     height: 65px;
   }
 
-  &__arrow {
-    cursor: pointer;
-
-    &:hover {
-      svg path {
-        fill: $dark-grey;
-      }
-    }
-  }
 }

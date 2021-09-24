@@ -1,11 +1,19 @@
 .subscribe {
-  padding: 120px 135px;
+  padding: 90px 135px;
+  width: auto;
+  @media (max-width: 767px){
+    padding: 50px 20px;
+  }
 
   &__title {
     font-weight: 600;
     font-size: 30px;
     line-height: 56px;
     color: $dark-grey;
+    @media (max-width: 767px){
+      font-size: 20px;
+      line-height: 38px;
+    }
   }
 
   &__subtitle {
@@ -14,6 +22,11 @@
     color: #525252;
     padding-right: 50%;
     padding-top: 20px;
+    @media (max-width: 767px){
+      font-size: 12px;
+      line-height: 23px;
+      padding-right: 0;
+    }
   }
 
   &__form {
@@ -25,6 +38,12 @@
     margin-top: 64px;
     display: flex;
     align-items: center;
+    @media (max-width: 767px){
+      height: auto;
+      flex-direction: column;
+      padding: 20px;
+      margin-top: 40px;
+    }
   }
 
   &__form-title {
@@ -40,10 +59,16 @@
     color: $white;
     padding-right: 125px;
     padding-top: 10px;
+    @media (max-width: 767px){
+      padding-right: 0;
+    }
   }
 
   &__group {
     position: relative;
+    @media (max-width: 767px){
+      margin-top: 40px;
+    }
   }
 
   &__input {
@@ -52,6 +77,9 @@
     border-style: none;
     border-radius: 8px;
     padding: 20px;
+    @media (max-width: 767px){
+      width: 300px;
+    }
 
     &::placeholder {
       font-weight: 300;

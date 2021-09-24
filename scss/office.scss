@@ -1,5 +1,9 @@
 .office {
   padding: 80px 130px;
+  width: auto;
+  @media (max-width: 768px){
+    padding: 50px 40px;
+  }
 
   &__title {
     font-weight: 600;
@@ -8,6 +12,15 @@
     text-align: center;
     color: $dark-grey;
     padding: 0 176px;
+    @media (max-width: 768px){
+      padding: 0;
+      text-align: center;
+      font-size: 16px;
+      line-height: 30px;
+      width: 300px;
+      height: 90px;
+
+    }
   }
 
   &__subtitle {
@@ -15,7 +28,10 @@
     font-size: 30px;
     line-height: 55px;
     color: $dark-grey;
-    margin-top: 55px
+    margin-top: 55px;
+    @media (max-width: 768px){
+      display: none;
+    }
   }
 
   &__body {
@@ -24,22 +40,47 @@
     color: $semi-grey;
     margin-top: 18px;
     width: 49%;
+    @media (max-width: 768px){
+      display: none;
+    }
   }
 
   &__pictures {
     position: relative;
+
   }
 
   &__points {
     position: absolute;
-    top: -65px;
-    right: 150px;
+    top: -74px;
+    right: 149px;
     z-index: 1;
+    width: 208px;
+    height: 165px;
+    background: white;
+    background-image: radial-gradient($light-orange 3px, transparent 0);
+    background-size: 21px 21px;
+
+    @media (max-width: 768px){
+      top: -30px;
+      right: 5%;
+      width: 30%;
+      height: 50%;
+      background-image: radial-gradient(#DC7000 2px, transparent 0);
+      background-size: 15% 15%;
+    }
   }
 
   &__image {
     position: relative;
     margin-top: 55px;
     z-index: 2;
+    margin-left: 5px;
+    width: 80%;
+    img {
+      @media  (max-width: 1440px){
+        width: 100%;
+        border-radius: 5px;
+      }
   }
-}
+}}

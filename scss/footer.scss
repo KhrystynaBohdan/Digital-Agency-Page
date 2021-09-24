@@ -2,6 +2,10 @@
   padding: 65px 100px;
   background-color: $semi-black;
   color: $white;
+  width: auto;
+  @media (max-width: 767px){
+    display: none;
+  }
 
   &__blocks {
     display: flex;
@@ -12,6 +16,9 @@
     display: flex;
     flex-direction: column;
     padding-top: 25px;
+    &--about {
+      width: 12%;
+    }
   }
 
   &__block--icons {
@@ -32,9 +39,9 @@
     line-height: 25px;
     padding-bottom: 30px;
   }
-
-  &__subtitle {
-    padding-top: 25px;
+  &__subtitle{
+    margin-top: 25px;
+    line-height: 25px;
   }
 
   &__email {
@@ -53,11 +60,19 @@
     text-decoration: none;
     cursor: pointer;
     color: $white;
+    margin-bottom: 15px;
 
     &:hover {
       text-decoration: underline;
       color: $white;
     }
+  }
+  &__subtitle-contact{
+    margin-bottom: 15px;
+    line-height: 25px;
+  }
+  &__block--contact{
+    width: 35%;
   }
 
   &__icon {

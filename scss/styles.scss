@@ -1,5 +1,6 @@
 @import "reset";
 @import "variables";
+@import "utility";
 @import "home-section";
 @import "top-section";
 @import "office";
@@ -9,6 +10,7 @@
 @import "read-more";
 @import "subscribe";
 @import "footer";
+@import "copyright";
 
 body {
   background: $white;
