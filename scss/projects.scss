@@ -5,6 +5,9 @@
       margin-top: 60px;
       padding: 0 35px;
   }
+  @media (min-width: 767px) and (max-width: 1439px){
+    padding: 100px 20px;
+  }
 
   &__header {
     text-align: center;
@@ -29,6 +32,9 @@
     @media (max-width: 767px){
       padding: 0;
     }
+    @media (min-width: 767px) and (max-width: 1439px){
+      padding: 0;
+    }
   }
 
   &__images {
@@ -36,6 +42,12 @@
     flex-wrap: wrap;
     gap: 27px;
     margin-top: 85px;
+    @media (max-width: 767px){
+      justify-content: center;
+    }
+    @media (min-width: 767px) and (max-width: 1439px){
+      justify-content: center;
+    }
   }
   &__image {
     @media (max-width: 767px){

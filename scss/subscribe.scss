@@ -27,6 +27,9 @@
       line-height: 23px;
       padding-right: 0;
     }
+    @media (min-width: 767px) and (max-width: 1439px){
+     padding-right: 0;
+    }
   }
 
   &__form {
@@ -39,6 +42,12 @@
     display: flex;
     align-items: center;
     @media (max-width: 767px){
+      height: auto;
+      flex-direction: column;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    @media (min-width: 767px) and (max-width: 1439px){
       height: auto;
       flex-direction: column;
       padding: 20px;
