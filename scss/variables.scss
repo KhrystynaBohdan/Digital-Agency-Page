@@ -7,3 +7,19 @@ $semi-grey: #525252;
 $orange: #FB9E3C;
 $light-orange: #DC7000;
 $fontPoppins: Poppins, Helvetica, Arial, sans-serif;
+
+
+$tablet: 768px;
+$laptop: 1440px;
+
+@mixin mobile {
+  @media (max-width: #{$tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) and (max-width: #{$laptop - 1px}) {
+    @content;
+  }
+}

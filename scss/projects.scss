@@ -1,11 +1,11 @@
 .projects {
   padding: 150px 135px;
   width: auto;
-  @media (max-width: 767px){
+  @include mobile {
       margin-top: 60px;
       padding: 0 35px;
   }
-  @media (min-width: 767px) and (max-width: 1439px){
+  @include tablet {
     padding: 100px 20px;
   }
 
@@ -19,7 +19,7 @@
     font-size: 25px;
     line-height: 47px;
     color: $dark-grey;
-    @media (max-width: 767px){
+    @include mobile {
       padding: 0;
     }
   }
@@ -29,10 +29,10 @@
     line-height: 26px;
     color: $semi-grey;
     padding: 0 330px;
-    @media (max-width: 767px){
+    @include mobile {
       padding: 0;
     }
-    @media (min-width: 767px) and (max-width: 1439px){
+    @include tablet {
       padding: 0;
     }
   }
@@ -42,15 +42,15 @@
     flex-wrap: wrap;
     gap: 27px;
     margin-top: 85px;
-    @media (max-width: 767px){
+    @include mobile {
       justify-content: center;
     }
-    @media (min-width: 767px) and (max-width: 1439px){
+    @include tablet {
       justify-content: center;
     }
   }
   &__image {
-    @media (max-width: 767px){
+    @include mobile {
       &--item-1{
         order: 0
       }

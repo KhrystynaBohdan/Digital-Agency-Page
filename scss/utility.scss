@@ -1,14 +1,14 @@
 .only-desktop {
   display: none;
 
-  @media (min-width: 768px){
+  @media (min-width: $tablet){
     display: block;
   }
 }
 .only-mobile{
   display: none;
 
-  @media (max-width: 768px){
+  @include mobile {
     display: block;
   }
 }

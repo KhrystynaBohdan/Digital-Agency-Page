@@ -1,13 +1,13 @@
 .cards {
   background-color: $semi-white;
   width: auto;
-  @media (max-width: 768px) {
+  @include mobile {
     padding: 55px 40px;
   }
 
   &__header {
     padding: 55px 135px;
-    @media (max-width: 768px) {
+    @include mobile {
       padding: 0;
     }
   }
@@ -17,7 +17,7 @@
     font-size: 30px;
     line-height: 55px;
     color: $dark-grey;
-    @media (max-width: 768px) {
+    @include mobile {
       font-size: 24px;
       line-height: 45px;
     }
@@ -26,7 +26,7 @@
   &__subtitle {
     display: flex;
     justify-content: space-between;
-    @media (max-width: 768px) {
+    @include mobile {
       font-size: 16px;
       line-height: 30px;
     }
@@ -38,7 +38,7 @@
     color: $semi-grey;
     padding-top: 15px;
     width: 50%;
-    @media (max-width: 768px) {
+    @include mobile {
       width: 85%;
     }
   }
@@ -50,7 +50,7 @@
       display: none;
     }
 
-    @media (max-width: 768px) {
+    @include mobile {
       display: none;
 
       &--mobile {
@@ -103,12 +103,12 @@
     align-items: center;
     justify-items: center;
     padding: 0 100px 100px 110px;
-    @media (max-width: 768px) {
+    @include mobile {
       padding: 0;
       padding-top: 10%;
       grid-template-columns: 1fr;
     }
-    @media (min-width: 767px) and (max-width: 1439px) {
+    @include tablet {
       grid-template-columns: repeat(2, 1fr);
       padding: 0;
       padding-bottom: 20px;
@@ -127,13 +127,13 @@
     flex-direction: column;
     padding: 35px;
     gap: 20px;
-    @media (max-width: 768px) {
+    @include mobile {
       &:not(:first-child) {
         display: none;
       }
       width: 300px;
     }
-    @media (min-width: 767px) and (max-width: 1439px) {
+    @include tablet {
       &:last-child {
         display: none;
       }
@@ -208,7 +208,7 @@
     color: $semi-grey;
     gap: 20px;
 
-    @media (max-width: 768px) {
+    @include mobile {
       font-size: 12px;
       line-height: 22px;
     }

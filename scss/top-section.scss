@@ -8,15 +8,14 @@
   padding: 100px 115px;
   width: auto;
 
-  // mobile
-  @media (max-width: 768px) {
+  @include mobile {
     background-image: url("images/background-mobile.svg");
     background-position: bottom;
     padding: 110px 50px;
     height: auto;
   }
 
-  @media (min-width: 768px) and (max-width: 1439px) {
+  @include tablet {
     height: auto;
     padding: 5%;
     background-position: bottom;
@@ -28,7 +27,7 @@
     flex-direction: column;
     margin: 0 16px;
 
-    @media (min-width: 768px) and (max-width: 1439px) {
+    @include tablet {
       flex-grow: 0;
       flex-shrink: 0;
       flex-basis: 50%;
@@ -37,11 +36,11 @@
 
 
   &__picture {
-    @media (max-width: 768px) {
+    @include mobile {
       display: none;
     }
 
-    @media (min-width: 768px) and (max-width: 1439px) {
+    @include tablet {
       align-self: center;
       img {width: 100%}
     }
@@ -53,7 +52,7 @@
     line-height: 30px;
     color: #E87D0E;
     margin-top: 30px;
-    @media (max-width: 768px){
+    @include mobile {
       font-size: 16px;
       line-height: 25px;
     }
@@ -64,7 +63,7 @@
     font-size: 50px;
     line-height: 78px;
     margin-top: 20px;
-    @media (max-width: 768px){
+    @include mobile {
       font-size: 34px;
       line-height: 52px;
     }
@@ -75,7 +74,7 @@
     font-size: 16px;
     line-height: 32px;
     margin-top: 24px;
-    @media (max-width: 768px){
+    @include mobile {
       font-size: 14px;
       line-height: 28px;
     }
@@ -94,7 +93,7 @@
     width: 195px;
     height: 55px;
     border-style: none;
-    @media (max-width: 768px){
+    @include mobile {
       font-size: 14px;
       line-height: 25px;
       width: 170px;

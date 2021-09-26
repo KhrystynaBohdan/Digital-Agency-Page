@@ -2,10 +2,10 @@
   padding: 85px 200px 135px 200px;
   width: auto;
 
-  @media (max-width: 767px) {
+  @include mobile {
     padding: 50px 0;
   }
-  @media (min-width: 767px) and (max-width: 1439px){
+  @include tablet {
     padding: 50px 0;
   }
 
@@ -16,7 +16,7 @@
     text-align: center;
     color: $dark-grey;
     padding: 0 105px;
-    @media (max-width: 767px) {
+    @include mobile {
       padding: 0 30px;
       font-size: 20px;
       line-height: 38px;
@@ -30,7 +30,7 @@
     color: $dark-grey;
     margin-top: 25px;
     padding: 0 100px;
-    @media (max-width: 767px) {
+    @include mobile {
       padding: 0 30px;
       font-size: 12px;
       line-height: 23px;
@@ -46,7 +46,7 @@
     grid-template-columns: repeat(4, 250px);
     row-gap: 80px;
     column-gap: 35px;
-    @media (max-width: 767px) {
+    @include mobile {
       grid-template-areas:
         "card1"
         "card2"
@@ -57,7 +57,7 @@
       grid-template-columns: repeat(1, 1fr);
 
     }
-    @media (min-width: 767px) and (max-width: 1439px){
+    @include tablet {
       grid-template-areas:
         "card1 card2"
         "card3 card4"

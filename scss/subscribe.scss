@@ -1,7 +1,7 @@
 .subscribe {
   padding: 90px 135px;
   width: auto;
-  @media (max-width: 767px){
+  @include mobile {
     padding: 50px 20px;
   }
 
@@ -10,7 +10,7 @@
     font-size: 30px;
     line-height: 56px;
     color: $dark-grey;
-    @media (max-width: 767px){
+    @include mobile {
       font-size: 20px;
       line-height: 38px;
     }
@@ -22,12 +22,12 @@
     color: #525252;
     padding-right: 50%;
     padding-top: 20px;
-    @media (max-width: 767px){
+    @include mobile {
       font-size: 12px;
       line-height: 23px;
       padding-right: 0;
     }
-    @media (min-width: 767px) and (max-width: 1439px){
+    @include tablet {
      padding-right: 0;
     }
   }
@@ -41,13 +41,13 @@
     margin-top: 64px;
     display: flex;
     align-items: center;
-    @media (max-width: 767px){
+    @include mobile {
       height: auto;
       flex-direction: column;
       padding: 20px;
       margin-top: 40px;
     }
-    @media (min-width: 767px) and (max-width: 1439px){
+    @include tablet {
       height: auto;
       flex-direction: column;
       padding: 20px;
@@ -68,14 +68,14 @@
     color: $white;
     padding-right: 125px;
     padding-top: 10px;
-    @media (max-width: 767px){
+    @include mobile {
       padding-right: 0;
     }
   }
 
   &__group {
     position: relative;
-    @media (max-width: 767px){
+    @include mobile {
       margin-top: 40px;
     }
   }
@@ -86,7 +86,7 @@
     border-style: none;
     border-radius: 8px;
     padding: 20px;
-    @media (max-width: 767px){
+    @include mobile {
       width: 300px;
     }
 

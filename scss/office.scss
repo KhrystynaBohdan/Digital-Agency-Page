@@ -1,7 +1,7 @@
 .office {
   padding: 80px 130px;
   width: auto;
-  @media (max-width: 768px){
+  @include mobile {
     padding: 50px 40px;
   }
 
@@ -12,7 +12,7 @@
     text-align: center;
     color: $dark-grey;
     padding: 0 176px;
-    @media (max-width: 768px){
+    @include mobile {
       padding: 0;
       text-align: center;
       font-size: 16px;
@@ -20,7 +20,7 @@
       height: 90px;
 
     }
-    @media (min-width: 767px) and (max-width: 1439px){
+    @include tablet {
       padding: 0;
     }
   }
@@ -31,7 +31,7 @@
     line-height: 55px;
     color: $dark-grey;
     margin-top: 55px;
-    @media (max-width: 768px){
+    @include mobile {
       display: none;
     }
   }
@@ -42,7 +42,7 @@
     color: $semi-grey;
     margin-top: 18px;
     width: 49%;
-    @media (max-width: 768px){
+    @include mobile {
       display: none;
     }
   }
@@ -63,7 +63,7 @@
     background-image: radial-gradient($light-orange 3px, transparent 0);
     background-size: 21px 21px;
 
-    @media (max-width: 768px){
+    @include mobile {
       top: -30px;
       right: 5%;
       width: 30%;
@@ -81,7 +81,7 @@
     width: 80%;
     img {
       width: 100%;
-      @media  (max-width: 1440px){
+      @include mobile {
         border-radius: 5px;
       }
   }
